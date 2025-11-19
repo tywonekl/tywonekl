@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+	
+	<head>
+		<title>Strona Leona - Projektowanie Stron Internetowych</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+	<body>
+		<div style="background-color:grey;"><h1><center>Projektowanie Stron Internetowych - Leon Tywonek
+		</center></h1></div>
+
+		<div style="float:left; width:30%; height:2200px; background-color:aqua;">
+
+			<h3>HTML</h3>
+			<a href="index.html">STRONA GŁÓWNA</a> <br />
+			<a href="kolory.html">KOLORY</a> <br />
+			<a href="nauczyciele.html">NAUCZYCIELE</a> <br />
+			<a href="zdjecia.html">ZDJĘCIA</a> <br />
+			<a href="tabele.html">TABELA</a> <br />
+			<a href="tywonek_tabela.html">TABELA NA OCENĘ</a> <br />
+			<a href="listy.html">LISTY</a> <br />
+			<a href="lista_tywonek.html">LISTY NA OCENĘ</a> <br />
+			<a href="mapy_odsylaczy.html">MAPY ODSYŁACZY</a> <br />
+			<a href="formularz.html">FORMULARZ</a> <br />
+			<a href="zdarzenia.html">ZDARZENIA</a> <br />
+			
+		</div>
+		<div style="float:right; width:70%;">
+		
+			<form>
+			
+			<p>IMIE I NAZWISKO<input type="text" name="imie_i_nazwisko" size="30" /></p>
+			<p>ADRES E-MAIL<input type="email" name="adres_e-mail" size="30" /></p>
+			<p>HASŁO<input type="password" name="haslo" size="30" /></p>
+			
+			<p>PŁEĆ (bez etykiety label)</p>
+			<p>MĘŻCZYZNA<input type="radio" name="plec" value="mezczyzna" /></p>
+			<p>KOBIETA<input type="radio" name="plec" value="kobieta" checked /></p>
+			
+			<p>PŁEĆ (z etykietą label)</p>
+			<label for="male">MĘŻCZYZNA</label>
+			<input type="radio" name="plec" id="male" value="mezczyzna" /> <br />
+			<label for="female">KOBIETA</label>
+			<input type="radio" name="plec" id="female" value="kobieta" /> <br />
+
+			<fieldset>
+				<legend>JĘZYKI KTÓRYMI WŁADASZ</legend>
+					<input type="checkbox" name="języki" value="wartość" />ANG <br />
+					<input type="checkbox" name="języki" value="wartość" />NIE <br />
+					<input type="checkbox" name="języki" value="wartość" />CHN <br />
+			</fieldset>
+
+			<select multiple>
+				<optgroup label="ULUBIONE OWOCE">
+					<option value="truskawki">TRUSKAWKI</option>
+					<option value="banany">BANANY</option>
+					<option value="maliny">MALINY</option>
+				</optgroup>
+			</select>
+
+			<br />
+			<br />
+
+			<input type="text"><input type="submit" value="Prześlij">
+
+			<br />
+
+			<select multiple size="7">
+				<optgroup label="DNI WOLNE">
+					<option value="sobota">SOBOTA</option>
+					<option value="niedziela">NIEDZIELA</option>
+				</optgroup>
+				<optgroup label="DNI ROBOCZE">
+					<option value="poniedzialek">PONIEDZIAŁEK</option>
+					<option value="wtorek">WTOREK</option>
+					<option value="sroda">ŚRODA</option>
+					<option value="czwartek">CZWARTEK</option>
+					<option value="piatek">PIĄTEK</option>
+				</optgroup>
+			</select>
+
+			<br />
+
+			<textarea cols="40" rows="5" ></textarea>
+
+			<br />
+
+			<textarea cols="40" rows="5"></textarea>
+			
+			<br />
+
+			<p><input type="reset" /> - PRZYCISK RESETOWANIA</p>
+			<p><input type="button" value="Opuść stronę!"/></p>
+			<p><button onclick="alert('Zakupiono')">Kupuj teraz!</button></p>
+			<p><input type="file" /></p>
+			
+			<br />
+			
+			<fieldset>
+				<legend>WYKSZTAŁCENIE</legend>
+					<input type="radio" value="podstawowe" name="wykrztałcenie" accesskey="P"/> Podstawowe [skrót ALT+P] <br />
+					<input type="radio" value="srednie" name="wykrztałcenie" accesskey="S"/> Średnie [skrót ALT+S] <br />
+					<input type="radio" value="wyzsze" name="wykrztałcenie" accesskey="W"/> Wyższe [skrót ALT+W] <br />
+			
+			
+			<br />
+			
+			<button type="reset"><img src="foty/gekon.jpg" width="180px" height="130px" alt="gekon"></button>
+
+			</fieldset>
+			
+			<br />
+			
+			<p>PRZYCISK WYSYŁANIA I CZYSZCZENIA PÓL</p>
+			<input type="submit" value="wyślij"/> PRZYCISK PRZESYŁANIA <br />
+			<input type="reset" value="wyczyść"/> PRZYCISK RESETOWANIA (odświerza formularz) <br />
+			
+			<p>PRZYCISKI BUTTON</p>
+			<button type="submit">Wyślij!!</button> <br />
+			<button type="reset">Usuń</button> <br />
+			<button type="reset" style="background-color:red">Usuń</button> <br />
+
+			<br />
+
+			<p>Do BUTTONU MOŻNA WSTAWIAĆ OBRAZEK (tabelkę i inne elementy)</p>
+			<button><img src="foty/gekon.jpg" width="180px" height="130px"></button>
+
+			<br />
+
+			<p>USPRAWNIENIA W FORMULARZACH [HTML 5]</p>
+			<p>
+				Atrybut autofocus automatycznie ustawia kursor w wybranym polu formularza
+				<input type="text" name="autofocus" autofocus>
+			</p>
+			<p>
+				Atrybut autocomplete służy do wyłączenia bądź włączenia autouzupełniania
+				<input type="text" name="autocomplete" autocomplete="on">
+			</p>
+			<p>
+				Lista proponowanych wartości wyświetlana jako lista rozwijalna
+				<input type="text"><input type="submit" value="Prześlij" /> <br /> <br />
+
+				<input type="date" value="2025-11-11"> - do wprowadzania daty <br /> <br />
+				<input type="color"> - do wprowadzania koloru
+
+				<p>Element wyjściowy przedstawia wynik obliczenia</p>
+					0 <input type="range" id="a" name="a" value="50" min="0" max="100"> 100 +
+					<input type="number" id="b" name="b" value="50">
+					<output name="wynik" for="a b">=</output><br />
+					<br />
+					<p><input type="text" value="ZABLOKOWANE" readonly> - Blokuje Pole - nie da się w nim pisać - disabled</input></p><br />
+				
+			</p>
+			</form>
+		
+		</div>
+		<div style="background-color:grey; clear:both;">
+		
+		<center>&copy; L.T., Październik 2025 </center>
+		
+		</div>
+
+	</body>
+</html>
