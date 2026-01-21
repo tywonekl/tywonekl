@@ -7,7 +7,7 @@
 		<title>Strona Leona - Projektowanie Stron Internetowych</title>
 		<style type="text/css">
 			
-			p {
+			 p {
 
 				font-family:"courier new";
 				font-style:italic;
@@ -16,7 +16,7 @@
 				color:maroon;
 
 			   }
-			blockquote {
+			 blockquote {
 
 			 			font-family: fantasy; 
 			 			font-style: italic;
@@ -27,7 +27,7 @@
 
 			 			}
 
-			em {
+			 em {
 
 				font-size: 25px;
 				font-family: verdana;
@@ -129,10 +129,79 @@
 
 			 			}
 
-			 #wlasne { 
+			 h3#wlasne { 
+
+			 			text-decoration: line-through;
+			 			word-spacing: 10pt;
+			 			color: orange;
+			 			border-width: 10px;
+			 			border-style: dashed;
+			 			border-color: blue;
+
+			 		   }
 
 
+			 #ramka1 {
+
+			 			width: 70%;
+			 			border-width: 30px;
+			 			border-style: solid;
+			 			background-color: white;
+			 			color: black;
+			 			padding: 10px;
+			 			border-image: url(foty/papirus.png) 20 stretch;
+			 			border-color: transparent;
+			 			
 			 		 }
+
+			 #ramka2 {
+
+			 			width: 70%;
+			 			border-width: 30px;
+			 			border-style: solid;
+			 			background-color: white;
+			 			color: black;
+			 			padding: 10px;
+			 			border-image: url(foty/papirus.png) 50 round;
+			 			border-color: transparent;
+			 			
+			 		 }
+
+			 h2#ramka3 {
+
+			 			border-image: url(foty/gwiazdka1.gif) 100 round;
+			 			background: none;
+			 			color: black;
+			 			padding: 5px;
+			 			width: 33%;
+			 			border-width: 50px;
+			 			border-style: solid;
+
+					   }
+
+			 h2#ramka3a {
+
+			 			border-image: url(foty/gwiazdka1.gif) 30 round;
+			 			background: none;
+			 			color: black;
+			 			padding: 5px;
+			 			width: 33%;
+			 			border-width: 50px;
+			 			border-style: solid;
+
+					   	}
+
+			 h2#ramka3b {
+
+			 			border-image: url(foty/gwiazdka1.gif) 20 round;
+			 			background: none;
+			 			color: black;
+			 			padding: 5px;
+			 			width: 33%;
+			 			border-width: 50px;
+			 			border-style: solid;
+
+					  	}
 
 		</style>
 		<meta charset="UTF-8"/>
@@ -222,6 +291,58 @@
 			<h3 id="zadanie2">TEKST NAKREŚLONY, ODSTĘPY MIĘDZY ZNAKAMI W TEKŚCIE 5 PT, WYŚRODKOWANY TEST, KOLOR TEKSTU BIAŁY, TŁO FUCHSIA, OBRAMOWANIE 3PX KROPOWANE BĄDŹ INSET BIAŁE, ODSTĘP 20 PX, SZEROKOŚĆ 70% </h3>
 
 			<h3 id="zadanie3">TEKST NAKREŚLONY, ODSTĘPY MIĘDZY ZNAKAMI W TEKŚCIE 5 PT, WYŚRODKOWANY TEST, KOLOR TEKSTU BIAŁY, TŁO FUCHSIA, OBRAMOWANIE 3PX KROPOWANE BĄDŹ INSET BIAŁE, ODSTĘP 20 PX, SZEROKOŚĆ 70% </h3>
+
+			<h3 id="wlasne"> TEKST PRZEKREŚLONY, ODSTĘPY MIĘDZY WYRAZAMI 10 PT, KOLOR TEKSTU POMARAŃCZOWY,
+			OBRAMOWANIE 10PX KRESKOWANE NIEBIESKIE
+			</h3>
+
+			<h2 id="ramka1">zadanie IV – OBRAMOWANIE:
+			Ustawienie obramowania obrazkowego dla nagłówka h2 - z identyfikatorem "ramka1"
+			TŁO: białe; TEKST: czarny, ODSTĘP: 10px, SZEROKOŚĆ: 70%; border: 30px solid transparent;
+			border-image: url(folder/nazwa.jpg) 50 stretch;
+
+			OBRAZ JEST ROZCIĄGNIĘTY ABY WYPEŁNIĆ CAŁY OBSZAR. </h2>
+
+			<h2 id="ramka2">zadanie IV – OBRAMOWANIE:
+			Ustawienie obramowania obrazkowego dla nagłówka h2 - z identyfikatorem "ramka1"
+			TŁO: białe; TEKST: czarny, ODSTĘP: 10px, SZEROKOŚĆ: 70%; border: 30px solid transparent;
+			border-image: url(folder/nazwa.jpg) 50 stretch;
+
+			OBRAZ WYPEŁNIA OBSZAR. W RAZIE POTRZEBY JEST PRZESKALOWNY, ABY WYPEŁNIĆ OBSZAR.
+			</h2>
+
+			<table>
+
+					<tr>
+
+						<td>
+
+							<h2 id="ramka3">zadanie IV – OBRAMOWANIE:
+							Ustawienie obramowania obrazkowego dla nagłówka h2 - z identyfikatorem "ramka3"
+							TŁO: none; TEKST: czarny, ODSTĘP: 5px, SZEROKOŚĆ: 33%; border: 50 px solid;
+							border-image: url(foty/gwiazdka1.gif) 100 round; </h2>
+
+						</td>
+						<td>
+
+							<h2 id="ramka3a">zadanie IV – OBRAMOWANIE:
+							Ustawienie obramowania obrazkowego dla nagłówka h2 - z identyfikatorem "ramka3a"
+							TŁO: none; TEKST: czarny, ODSTĘP: 5px, SZEROKOŚĆ: 33%; border: 50 px solid;
+							border-image: url(foty/gwiazdka1.gif) 30 round; </h2>
+
+						</td>
+						<td>
+
+							<h2 id="ramka3b">zadanie IV – OBRAMOWANIE:
+							Ustawienie obramowania obrazkowego dla nagłówka h2 - z identyfikatorem "ramka3b"
+							TŁO: none; TEKST: czarny, ODSTĘP: 5px, SZEROKOŚĆ: 33%; border: 50 px solid;
+							border-image: url(foty/gwiazdka1.gif) 20 round; </h2>
+
+						</td>
+
+					</tr>
+
+			</table>
 
 
 		</div>
