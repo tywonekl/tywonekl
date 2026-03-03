@@ -1,34 +1,36 @@
-a:link, a:visited {
+a:link {
 
-			 							color: black;
-			 							text-decoration: none;
-			 							background: lightslategrey;
-			 							border: 1px solid black;
-			 							border-radius: 10px;
-			 							display: inline-block;
-			 							width: 200px;
+	   border-style: solid;
+	   border-color: pink;
+	   color: darkred;
+	   background-color: orange;
+	   border-radius: 8px;
 
-			 						   }
+	   }
 
 a:active {
 
-						 color: silver;
-						 text-decoration: none;
-						 background: black;
-						 border: 2px dotted silver;
-						 display: inline-block;
-			 			 width: 200px;
 
-						 }
+
+	     }
+
+a:visited {
+
+		  border-style: solid;
+		  border-color: pink;
+		  color: darkred;
+		  background-color: orange;
+		  border-radius: 8px;
+
+	      }	   	   
 
 a:hover {
 
-						color: black;
-						text-decoration: none;
-						background: white;
-						border: 2px dashed black;
-						border-radius: 5px;
-						display: inline-block;
-			 			width: 200px;
+		border-style: dashed;
+		border-color: black;
+		color: black;
+		background-color: white;
+		border-radius: 8px;
 
-						}
+	    }
+

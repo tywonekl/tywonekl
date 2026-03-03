@@ -37,7 +37,7 @@
 
 			 	}
 
-			 h1 {
+			 h1.zadanie {
 
 			 	text-decoration: overline;
 			 	line-height: 100%;
@@ -267,17 +267,78 @@
 
 									  }
 
+			ul.punkty {
+
+					  list-style-type: circle;
+					  list-style-position: outside;
+					  color: orangered;
+					  font-family: verdana;
+
+					  }
+
+			ol.numer {
+
+					 list-style-type: upper-alpha;
+					 list-style-position: inside;
+					 color: indianred;
+					 font-family: italic;
+
+					 }
+
+			ol.swieta {
+
+					  list-style-position: inside;
+					  list-style-image: url(foty/gwiazdka1.gif);
+
+					  }
+
+			h3#kursor1 {
+
+						cursor: help;
+
+					   }
+
+			table#kursor2 {
+
+						cursor: crosshair;
+						width: 300px;
+
+					   }
+
+			div#rozmiar {
+
+						border-style: double;
+						border-color: orangered;
+						height: 16%;
+						width: 60%;
+						text-align: center;
+						padding-top:10px ;
+						padding-right:15px ;
+						padding-bottom:25px ;
+						padding-left:20px ;
+
+						}
+
+			body.marginesy {
+
+							margin-top: 0px;
+							margin-right:10px ;
+							margin-bottom:5px ;
+							margin-left:10px ;
+
+						  }
+
 
 
 		</style>
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
-	<body bgcolor="lightgrey">
+	<body bgcolor="lightgrey" class="marginesy">
 		<div style="background-color:grey;"><h1><center>Projektowanie Stron Internetowych - Leon Tywonek
 		</center></h1></div>
 
-		<div style="float:left; width:30%; height:850px; background-color:aqua;">
+		<div style="float:left; width:30%; height:1300px;background-color:aqua;">
 
 			<h3>HTML</h3>
 			<a href="index.html">STRONA GŁÓWNA</a> <br /> <br />
@@ -322,7 +383,7 @@
 			<em> Formatowanie (wyróżnionego tekstu - uwypuklenia) EM: krój czcionki - verdana, grubość - 400, rozmiar - 25px, kolor - pomarańczowy !! </em>
 
 			<h3> zadanie II - TEKST: </h3>
-			<h1>Formatowanie tytułu h1:
+			<h1 class="zadanie">Formatowanie tytułu h1:
 			dekoracja tekstu – nakreślenie,
 			odstępy między wierszami – 100%,
 			wyśrodkowanie,
@@ -434,6 +495,61 @@
 			<br>
 			<br>
 
+			<h3>ZADANIE VI - LISTY </h3>
+
+			<ul class="punkty"> PIĘĆ ZALET PRZEDMIOTU TSI:
+				<li>Odczucie szybkiego uczenia się</li>
+				<li>Jest ciekawy</li>
+				<li>Pani jest fajna</li>
+				<li>Dużo nowych informacji</li>
+				<li>Lubię to robić</li>
+			</ul>
+
+
+			<ol class="numer"> TRZY WADY PRZEDMIOTU TSI:
+				<li>Czasami za dużo informacji</li>
+				<li>Nudne pisanie w zeszycie</li>
+				<li>Brak</li>
+			</ol>
+
+			<ol class="swieta"> CO MUSZĘ ZROBIĆ PRZED ŚWIĘTAMI BOŻEGO NARODZENIA
+				<li>KUPIĆ PREZENTY</li>
+				<li style="list-style-image: url(foty/snieg.gif);">UGOTOWAĆ PIEROGI</li>
+				<li style="list-style-image: url(foty/sniezek.gif);">PRZYGOTOWAĆ STÓŁ</li>
+				<li style="list-style-image: url(foty/gwiazdeczka1.gif);">KUPIĆ KARPIA</li>
+				<li style="list-style-image: url(foty/gwiazdeczka1.gif);">POSPRZĄTAĆ</li>
+				<li style="list-style-image: url(foty/gwiazdeczka1.gif);">UDEKOROWAĆ CHOINKĘ</li>
+			</ol>
+
+			<h3 id="kursor1">ZADANIE VII - KURSOR </h3>
+
+			<table border="2px" id="kursor2">
+				
+				<tr>
+					
+					<td>1</td>
+
+					<td>2</td>
+
+				</tr>
+
+			</table>
+
+			<br>
+			<br>
+
+			<div id="rozmiar">
+
+				<h3>ZADANIE VIII – ROZMIAR:</h3>
+
+				Ustawienie wysokości (8%) i szerokości (45%) dla elementu div#rozmiar
+				Kolor i rodzaj obramowania dobierz samodzielnie
+				div#rozmiar { height: 16%; width: 60%; border: double, orangered;}
+
+			</div> 
+
+			<br>
+			<br>
 
 		</div>
 		<div style="background-color:grey; clear:both;">
