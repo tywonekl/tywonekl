@@ -50,6 +50,12 @@
 
 								 }
 
+			td.one:empty {
+
+							display: none;
+
+						 }
+
 		    table.dwa {
 
 		    			border-collapse: collapse;
@@ -104,12 +110,6 @@
 
 		    			}
 
-		    tr.three {
-
-
-
-		    		 }
-
 		    th.three,td.three {
 
 		    					border-bottom: red dotted 2px;
@@ -141,11 +141,193 @@
 
 		    			   }
 
+		    table.cztery {
+
+		    				width: 50%;
+		    				border: solid 1px black;
+
+		    			 }
+
+		    th.cztery {
+
+		    			background-color: yellow;
+		    			color: red;
+
+		    		  }
+
+		    td.cztery {
+
+		    			background-color: white;
+
+		    		  }
+
+		    table.piec * {
+
+		    				border: solid 1px black;
+
+		    			 }
+
+		    table.piec {
+
+		    				width: 50%;
+
+		    			 }
+
+		    th.piec {
+
+		    			background-color: yellow;
+		    			color: red;
+
+		    		  }
+
+		    table.noc,table.noc * {
+
+		    						border-spacing: 10px;
+		    						border: outset maroon 3pt;
+
+		    					  }
+
+		    table.noc {
+
+		    			width: 50%;
+
+		    		  }
+
+		    th.noc {
+
+		    			border: inset blue 3pt;
+		    			background-color: pink;
+
+		   		   }
+
+		   	tr.noc {
+
+		   					empty-cells: hide;
+
+		   		   }
+
+		   	table.pink {
+
+		   				border-collapse: collapse;
+
+		   			   }
+
+		   	tr.pink {
+
+
+
+		   			}
+
+		   	th.pink {
+
+		   				border: solid mediumpurple 3pt;
+		   				background-color: pink;
+		   				color: purple;
+
+		   			}
+
+		    td.pink {
+
+		    			border: solid black 2pt;
+
+		    		}
+
+		    table.cap {
+
+		    			width: 60%;
+		    			background-color: aqua;
+
+		    		  }
+
+		    tr.cap {
+
+
+
+		    	   }
+
+		    th.cap {
+
+		    			background-color: aqua;
+		    			color: navy;
+		    			border: solid black 2pt;
+
+		    	   }
+
+		    td.cap {
+
+		    			background-color: black;
+		    			color: white;
+
+		    	   }
+
+		    caption.cap {
+
+		    				caption-side: top;
+		    				width: 70pt;
+		    				background-color: black;
+		    				color: white;
+		    				border: solid 1pt aqua;
+
+
+		    			}
+
+		    table.out {
+
+		    						border: solid red 1pt;
+		    						background-color: navy;
+		    						color: white;
+		    						width: 70%;
+		    						border-spacing: 5px;
+
+		    		  }
+
+		    th.out {
+
+		    			background-color: red;
+		    			border: solid red 1pt;
+		    			color: white;
+		    			border-spacing: 5px;
+
+		    	   }
+
+		    td.out {
+
+		    		border: solid red 1pt;
+		    			background-color: navy;
+		    			color: white;
+		    			border-spacing: 5px;
+
+		    	   }
+
+		    table.in {
+
+		    			border: solid red 2pt;
+		    			background-color: navy;
+		    			color: white;
+		    			width: 100%;
+		    			border-spacing: 5px;
+		    
+		    		 }
+
+		    th.in {
+
+		    		background-color: lightgreen;
+		    		border: solid 1px blue;
+
+		    	  }
+
+		     td.in {
+
+		    		background-color: steelblue;
+		    		border: solid 1px cyan;
+
+		    	  }
+
 		</style>
 
 	</head>
 
-	<body>
+	<body style="background-color:lightgrey;">
 
 		<div style="background-color:grey;"><h1><center>Projektowanie Stron Internetowych - Leon Tywonek
 		</center></h1></div>
@@ -222,31 +404,32 @@
 
 				<tr>
 					<td class="one">1</td>
-					<td class="one">komórka 2-2</td>
-					<td class="one">komórka 2-3</td>
+					<td class="one">Anna Nowak</td>
+					<td class="one">Tak</td>
 				</tr>
 
 				<tr>
 					<td class="one">2</td>
-					<td class="one">komórka 3-2</td>
-					<td class="one">komórka 3-3</td>
+					<td class="one">Jan Kowalski</td>
+					<td class="one">Tak</td>
 				</tr>
 
 				<tr>
 					<td class="one">3</td>
-					<td class="one">komórka 3-2</td>
-					<td class="one">wdawd</td>
+					<td class="one">Krzysztof Kwiatkowski</td>
+					<td class="one">Tak</td>
 				</tr>
 
 				<tr>
 					<td class="one">4</td>
 					<td class="one">Filip</td>
-					<td class="one"></td>
+					<td class="one">&nbsp</td>
 				</tr>
 
 				<tr>
 					<td class="one">4</td>
 					<td class="one">Maja</td>
+					<td class="one"></td>
 				</tr>
 
 			</table>
@@ -258,21 +441,21 @@
 			<table class="dwa">
 				
 				<tr class="dwa">
-					<th class="dwa">komórka 1-1</th>
-					<th class="dwa">komórka 1-1</th>
-					<th class="dwa">komórka 1-1</th>
+					<th class="dwa">Pierwsze Imię</th>
+					<th class="dwa">Nazwisko</th>
+					<th class="dwa">Zarobek na godz.</th>
 				</tr>
 
 				<tr class="dwa">
-					<td class="dwa">komórka 2-1</td>
-					<td class="dwa">komórka 1-1</td>
-					<td class="dwa">komórka 1-1</td>
+					<td class="dwa">Peter</td>
+					<td class="dwa">Griffin</td>
+					<td class="dwa">$100</td>
 				</tr>
 
 				<tr class="dwa">
-					<td class="dwa">komórka 3-1</td>
-					<td class="dwa">komórka 1-1</td>
-					<td class="dwa">komórka 1-1</td>
+					<td class="dwa">Lois</td>
+					<td class="dwa">Griffin</td>
+					<td class="dwa">$100</td>
 				</tr>
 
 				<tr class="dwa">
@@ -361,6 +544,187 @@
 					<td class="three">komórka 3-1</td>
 					<td class="three">komórka 1-1</td>
 					<td class="three">komórka 1-1</td>
+				</tr>
+
+			</table>
+
+			<br>
+			<hr>
+			<br>
+
+			<table class="cztery">
+				
+				<tr class="cztery">
+					<th class="cztery">1</th>
+					<th class="cztery">2</th>
+				</tr>
+
+				<tr class="cztery">
+					<td class="cztery">a</td>
+					<td class="cztery">b</td>
+				</tr>
+
+			</table>
+
+			<br>
+			<hr>
+			<br>
+
+			<table class="piec">
+				
+				<tr class="piec">
+					<th class="piec">I</th>
+					<th class="piec">II</th>
+				</tr>
+
+				<tr class="piec">
+					<td class="piec">i</td>
+					<td class="piec">ii</td>
+				</tr>
+
+			</table>
+
+			<br>
+			<hr>
+			<br>
+
+			<table class="noc">
+				
+				<tr class="noc">
+					<th class="noc">Pracownik</th>
+					<th class="noc">Data rozpoczęcia</th>
+					<th class="noc">Data zakończenia</th>
+					<th class="noc">Staż</th>
+				</tr>
+
+				<tr class="noc">
+					<td class="noc">komórka 2-1</td>
+					<td class="noc">komórka 1-1</td>
+					<td class="noc">komórka 1-1</td>
+					<td class="noc">komórka 1-1</td>
+				</tr>
+
+				<tr class="noc">
+					<td class="noc">komórka 3-1</td>
+					<td class="noc">07/06/2009</td>
+					<td class="noc">do teraz</td>
+					<td class="noc"></td>
+				</tr>
+
+			</table>
+
+			<br>
+			<hr>
+			<br>
+
+			<table class="pink">
+				
+				<tr class="pink">
+					<th class="pink">Pracownik</th>
+					<th class="pink">Data rozpoczęcia</th>
+					<th class="pink">Data zakończenia</th>
+				</tr>
+
+				<tr class="pink">
+					<td class="pink">komórka 2-1</td>
+					<td class="pink">komórka 1-1</td>
+					<td class="pink">komórka 1-1</td>
+				</tr>
+
+				<tr class="pink">
+					<td class="pink">komórka 2-1</td>
+					<td class="pink">komórka 1-1</td>
+					<td class="pink">komórka 1-1</td>
+				</tr>
+
+				<tr class="pink">
+					<td class="pink">komórka 3-1</td>
+					<td class="pink">07/06/2009</td>
+					<td class="pink">&nbsp</td>
+				</tr>
+
+			</table>
+
+			<br>
+			<hr>
+			<br>
+
+			<table class="cap">
+				
+				<tr class="cap">
+					<th class="cap">Pracownik</th>
+					<th class="cap">Data rozpoczęcia</th>
+					<th class="cap">Data zakończenia</th>
+				</tr>
+
+				<tr class="cap">
+					<td class="cap">komórka 2-1</td>
+					<td class="cap">komórka 1-1</td>
+					<td class="cap">komórka 1-1</td>
+				</tr>
+
+				<tr class="cap">
+					<td class="cap">komórka 3-1</td>
+					<td class="cap">komórka 1-1</td>
+					<td class="cap">komórka 1-1</td>
+				</tr>
+
+				<caption class="cap">Schemat kontroli pracowników</caption>
+
+			</table>
+
+			<br>
+			<hr>
+			<br>
+
+			<table class="out">
+				
+				<tr class="out">
+					<th class="out">Pierwsze Imię</th>
+					<th class="out">Nazwisko</th>
+					<th class="out">Zarobek na godz.</th>
+				</tr>
+
+				<tr class="out">
+					<td class="out">Peter</td>
+					<td class="out">Griffin</td>
+					<td class="out">$100</td>
+				</tr>
+
+				<tr class="out">
+					<td class="out">Eryk</td>
+					<td colspan="2" rowspan="2">
+						
+						<table class="in">
+							
+							<tr  class="in">
+								<th class="in">Pracownik</th>
+								<th class="in">Pracownik</th>
+							</tr>
+
+							<tr  class="in">
+								<td class="in">Pracownik</td>
+								<td class="in">Pracownik</td>
+							</tr>
+
+							<tr  class="in">
+								<td class="in">Pracownik</td>
+								<td class="in">Pracownik</td>
+							</tr>
+
+						</table>
+
+					</td>
+				</tr>
+
+				<tr class="out">
+					<td class="out">Bartosz</td>
+				</tr>
+
+				<tr class="out">
+					<th class="out">Pracownik</th>
+					<th class="out">Data rozpoczęcia</th>
+					<th class="out">Data zakończenia</th>
 				</tr>
 
 			</table>
