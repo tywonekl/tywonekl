@@ -10,38 +10,65 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<style>
 
-			i>span {
+			#element:first-line {
 
-					color: blue;
+									background-color: yellow;
+									color: black;
+									font-family: ravie;
+									text-decoration: underline;
 
-				   }
+					 			}
 
-			h3>ins {
+			#element2:first-letter {
 
-					color: green;
+									font-size: 60pt;
+									background-color: cyan;
+									border: 1px blue solid;
+									color: fuchsia;
+									padding: 2pt;
 
-				   }
+								  }	
 
-			div+i {
+			#element3 {
 
-				color: red;
-				font-size: 18pt;
+						border: red solid 1px;
+						padding: 10pt;
+						font-size: 20px;
 
-				}
+					  }
 
-			div~i {
+			#element3:before {
 
-					font-size: 18pt;
-					color: fuchsia;
+								content: '^-^';
+								border-radius: 80%;
+								border: 1px solid blue;
+								background-color: teal;
+								color: white;
+								padding: 5px;
 
-				  }
+							 }
 
-			p cite {
+			#element3:after {
 
-					color: red;
-					font-size: 18pt;
+								content: 'DAMY RADĘ TO ZROBIĆ';
+								background-color: green;
+								border: 1px blue solid;
+								padding: 5px;
+			
+							}
 
-				   }
+			.element4::marker {
+
+								color: red;
+
+							   }
+
+			*::selection {
+
+							background-color: orange;
+							color: red;
+
+					  	 }
 
 		</style>
 
@@ -90,24 +117,65 @@
 
 		<div style="float:right; width:70%;">
 
-			<div>
+			<p id="element">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
 
-			Wybieramy się w podróż dookoła świata. <i>Będziemy odwiedzali po kolei wszystkie <span>kontynenty</span>.</i>
+			<br>
+			<br>
+
+			<div id="element2">
+				
+				<p id="element2">
+					
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.
+
+				</p>
+
+				<p id="element2">
+					
+					Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+				</p>
 
 			</div>
 
-			<hr>
+			<br>
+			<br>
 
-			<h3>Wybieramy się w podróż dookoła <ins>świata.</ins> <i>Będziemy odwiedzali po kolei wszystkie <ins>kontynenty.</ins></i></h3>
+			<h2 id="element3">  ZDAĆ DO TRZECIEJ KLASY  </h2>
 
-			<hr>
+			<h3 id="element3">  ZDAĆ MATURĘ  </h3>
 
-			<div>Wybieramy się w podróż dookoła <del>świata.</del> . <i> Będziemy odwiedzali po kolei wszystkie <del>kontynenty.</del></i></div>
-			<i>Zwiedzanie Europy rozpoczniemy od <del>Madrytu</del></i> . <i>Zwiedzanie Azji Rozpoczniemy od Pekinu.</i>
+			<h3 id="element3">  ZDAĆ EGZ ZAWODOWY  </h3>
 
-			<hr>
+			<ul class="element4"  type="circle">
 
-			<p>Wasz czas jest ograniczony, więc <cite>nie</cite> marnujcie go, żyjąc cudzym życiem. <cite>Nie</cite> wpadajcie w pułapkę dogmatów, żyjąc poglądami innych ludzi. <cite>Nie</cite> pozwólcie, żeby hałas cudzych opinii zagłuszył wasz własny wewnętrzny głos. I najważniejsze – miejcie odwagę kierować się sercem i intuicją.</p>
+				<li class="element4">
+					
+					A z resztą i tak nas nie usłyszą
+
+				</li>
+
+				<li class="element4">
+
+					Z jadalni idzie się tu prawie dziesięć minut przez te wszystkie korytarze i schody
+
+				</li>
+
+				<li class="element4">
+					
+					- Co to za dziwny odgłos?! - spytała nagle Łucja
+
+				</li>
+
+			</ul>
 
 		</div>
 
